@@ -1,0 +1,94 @@
+
+:root{
+    --color-primary: #333;
+    --color-grau:#43438F;
+    --color-background:#333333a9;
+    --color-text:#FFFFFF;
+    --color-button:#b9b84c;
+    --color-title:#748AB7;
+    --color-secundary:#736A6D;
+    --color-text-input: #333333;
+    --color-text-fild:#f5f5f5;
+    --color-beckground-with:#d6d6d6;
+    --color-beckground-history: #d6ccb8b2;
+    /* --color-background-modal: #000000bf;
+    --color-span-modal: #000000bf;
+    --color-dark:#000000; */
+    /*tamanho da fonte padão: 16px - 100% - 1rem*/
+    font: 60% arial ; /*9.6px  controle das medidas rem */
+
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ html, body, #root{
+     height: 100vh;
+ }
+
+body{
+    background-color: var( --color-background);
+}
+
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto ;
+}
+
+.label-input{
+    padding: 2px;
+    width: 99%;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.5rem;
+}
+.input-block,
+.textarea-block,
+.select-block {
+    width: 100%;
+    height: 100%;
+    margin: 0 ;
+    margin-top: 0.2rem;
+    border: none;
+    padding: 2px;
+    border-radius: 0.5rem;
+    resize: vertical;
+}
+
+body,
+input,
+button,
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+.container{
+    width: 90vw;
+    max-width: 700px;
+    margin: 0 auto
+}
+
+
+@media( min-width:700px){
+    :root{
+        font: 75% arial;
+    }
+
+}
+@media( min-width:1000px){
+    :root{
+        font: 80% arial;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+      margin: 0 auto;
+        width: 1000px;
+    }
+}  
