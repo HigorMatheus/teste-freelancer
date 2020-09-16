@@ -25,15 +25,14 @@ const Product = ()=>{
     return(
         <div className="Product d-flex flex-row bd-highlight mb-3">
                      {product.map((prod :Iproducts)=>{
-                         
-                         
                          return(
-                            <div className="  d-flex card col-md-4" >
+                            <div className="  d-flex card col-6" >
                             <img src={prod.image_url} className="card-img-top" alt="..."/>
                             <div className="card-body">
                          <h5 className="card-title">{prod.name}</h5>
                                 <p className="card-text">{prod.description}</p>
-                                <a href="#" className="btn btn-primary">Go somewhere</a>
+                         <p className= "card-text">{prod.cost}</p>
+                            
                             </div>
                         </div>
                          )

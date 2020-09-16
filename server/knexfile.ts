@@ -4,16 +4,24 @@ import path from 'path'
 module.exports = {
 
   development: {
-    client: 'mysql',
+        client: 'sqlite3',
     connection: {
-      host : '127.0.0.1',
-      user : 'root',
-      password : '',
-      database : 'test_ts'
+      filename: path.resolve(__dirname,'src',  'database', 'database.sqlite3'),
     },
     migrations: {
-      directory: path.resolve(__dirname, 'src', 'database', 'migrations'),
+      directory: path.resolve(__dirname,'src',  'database', 'migrations'),
     },
+    useNullAsDefaund: true,
+    // client: 'mysql',
+    // connection: {
+    //   host : '127.0.0.1',
+    //   user : 'root',
+    //   password : '',
+    //   database : 'test_ts'
+    // },
+    // migrations: {
+    //   directory: path.resolve(__dirname, 'src', 'database', 'migrations'),
+    // },
   },
 
   staging: {

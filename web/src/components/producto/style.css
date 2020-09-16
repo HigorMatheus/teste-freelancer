@@ -2,5 +2,9 @@
     padding: 2px;
     margin: 5px;
     display: flex;
-    
+
+}
+
+img{
+    width: 100%;
 }
