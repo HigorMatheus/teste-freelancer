@@ -12,5 +12,5 @@ yarn dev
 ```
 ## para iniciar o front end 
 ```bash
-yarn startdit add 
+yarn start 
 ```
